@@ -35,7 +35,11 @@ class TemplesControllerTest < ActionController::TestCase
   end
 
   test "should update temple" do
+<<<<<<< HEAD
     patch :update, id: @temple, temple: { address: @temple.address, age: @temple.age, comment: @temple.comment, costume: @temple.costume, distance: @temple.distance, experience: @temple.experience, holiday: @temple.holiday, id: @temple.id, leastYear: @temple.leastYear, live: @temple.live, name: @temple.name, phoneNumber: @temple.phoneNumber, pictUrl: @temple.pictUrl, support: @temple.support, workingTime: @temple.workingTime }
+=======
+    patch :update, id: @temple, temple: { name: @temple.name }
+>>>>>>> develop
     assert_redirected_to temple_path(assigns(:temple))
   end
 
