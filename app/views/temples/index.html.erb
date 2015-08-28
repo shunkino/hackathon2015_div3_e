@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Temples</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Picturl</th>
+      <th>Age</th>
+      <th>Live</th>
+      <th>Support</th>
+      <th>Leastyear</th>
+      <th>Costume</th>
+      <th>Workingtime</th>
+      <th>Holiday</th>
+      <th>Distance</th>
+      <th>Experience</th>
+      <th>Comment</th>
+      <th>Address</th>
+      <th>Phonenumber</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @temples.each do |temple| %>
+      <tr>
+        <td><%= temple.id %></td>
+        <td><%= temple.name %></td>
+        <td><%= temple.pictUrl %></td>
+        <td><%= temple.age %></td>
+        <td><%= temple.live %></td>
+        <td><%= temple.support %></td>
+        <td><%= temple.leastYear %></td>
+        <td><%= temple.costume %></td>
+        <td><%= temple.workingTime %></td>
+        <td><%= temple.holiday %></td>
+        <td><%= temple.distance %></td>
+        <td><%= temple.experience %></td>
+        <td><%= temple.comment %></td>
+        <td><%= temple.address %></td>
+        <td><%= temple.phoneNumber %></td>
+        <td><%= link_to 'Show', temple %></td>
+        <td><%= link_to 'Edit', edit_temple_path(temple) %></td>
+        <td><%= link_to 'Destroy', temple, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Temple', new_temple_path %>

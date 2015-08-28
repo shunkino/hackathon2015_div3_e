@@ -1,0 +1,1 @@
+json.extract! @temple, :id, :id, :name, :pictUrl, :age, :live, :support, :leastYear, :costume, :workingTime, :holiday, :distance, :experience, :comment, :address, :phoneNumber, :created_at, :updated_at
