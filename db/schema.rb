@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 20150828143502) do
 
   create_table "temples", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
     t.integer  "ageLimit"
     t.integer  "rent"
     t.integer  "foodExpense"
@@ -29,9 +29,12 @@ ActiveRecord::Schema.define(version: 20150828143502) do
     t.integer  "holiday"
     t.integer  "phoneNumber"
     t.integer  "region_id"
+    t.integer  "workingHours"
+    t.integer  "distanceFromStation"
     t.string   "picUrl"
     t.string   "costume"
     t.string   "address"
+    t.string   "experience"
     t.boolean  "sponger"
     t.boolean  "wages"
   end
