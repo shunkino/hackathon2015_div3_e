@@ -1,0 +1,25 @@
+#sect-group {
+    background-color: #03003E;
+}
+
+#treatment-group {
+    background-color: #930F28;
+}
+
+#time-group {
+    background-color: #45931D;
+}
+
+#group-title {
+    color:white;
+}
+
+#header{
+    background-color:white;
+}
+
+#imgwindow {
+    max-width: 100%;
+    height: auto;
+}
+
