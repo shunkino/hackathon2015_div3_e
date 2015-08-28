@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150828143502) do
+ActiveRecord::Schema.define(version: 20150828151347) do
 
   create_table "regions", force: :cascade do |t|
     t.string "sect"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20150828143502) do
     t.string   "address"
     t.boolean  "sponger"
     t.boolean  "wages"
+    t.integer  "region_id"
   end
 
 end
