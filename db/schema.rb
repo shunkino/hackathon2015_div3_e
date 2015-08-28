@@ -11,12 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150828124006) do
+ActiveRecord::Schema.define(version: 20150828124923) do
 
   create_table "temples", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "ageLimit"
+    t.integer  "rent"
+    t.integer  "foodExpense"
+    t.integer  "minYears"
+    t.integer  "holiday"
+    t.integer  "phoneNumber"
+    t.string   "region"
+    t.string   "picUrl"
+    t.string   "costume"
+    t.string   "address"
+    t.boolean  "sponger"
+    t.boolean  "wages"
   end
 
 end
