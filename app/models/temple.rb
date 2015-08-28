@@ -1,3 +1,3 @@
 class Temple < ActiveRecord::Base
-	has_one :region
+	belongs_to :region
 end
