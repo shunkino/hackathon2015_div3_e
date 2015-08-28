@@ -1,3 +1,3 @@
 class Region < ActiveRecord::Base
-	has_many :temples
+ belongs_to :temple
 end

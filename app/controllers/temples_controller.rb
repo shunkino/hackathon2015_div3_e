@@ -69,6 +69,6 @@ class TemplesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def temple_params
-      params.require(:temple).permit(:id, :name, :pictUrl, :age, :live, :support, :leastYear, :costume, :workingTime, :holiday, :distance, :experience, :comment, :address, :phoneNumber)
+     params.require(:temple).permit(:name, :ageLimit, :rent,:foodExpense,:minYears,:holiday,:phoneNumber,:region,:picUrl,:costume,:address,:sponger,:wages,:region_id)
     end
 end

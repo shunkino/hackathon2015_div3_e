@@ -12,20 +12,37 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :id %><br>
-    <%= f.number_field :id %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br>
+   寺社名<br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :picUrl %><br>
+  
+  <div class="field1">
+    画像URL<br>
     <%= f.text_field :picUrl %>
   </div>
+
   <div class="field">
-    <%= f.label :ageLimit %><br>
-    <%= f.text_field :ageLimit %>
+    年齢下限<br>
+    <%= f.number_field :ageLimit %>
+  </div>
+
+  <div class="field">
+    生活支援<br>
+    <%= f.check_box :wages , {}, true, false %>
+  </div>
+
+  <div class="field">
+    宿泊費<br>
+    <%= f.number_field :rent %>
+  </div>
+
+  <div class="field">
+    食費<br>
+    <%= f.number_field :foodExpense %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
   </div>
 
 <% end %>

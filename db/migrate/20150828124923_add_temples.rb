@@ -6,8 +6,8 @@ class AddTemples < ActiveRecord::Migration
      add_column :temples, :minYears,   :integer
      add_column :temples, :holiday,    :integer
      add_column :temples, :phoneNumber,:integer
+     add_column :temples, :region_id, :integer
 
-     add_column :temples, :region, :string
      add_column :temples, :picUrl, :string
      add_column :temples, :costume,:string
      add_column :temples, :address,:string

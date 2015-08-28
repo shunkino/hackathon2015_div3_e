@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Temples</h1>
+<h1>成仏センス</h1>
 
 <table>
   <thead>
@@ -29,22 +29,19 @@
       <tr>
         <td><%= temple.id %></td>
         <td><%= temple.name %></td>
-        <td><%= temple.pictUrl %></td>
-        <td><%= temple.age %></td>
-        <td><%= temple.live %></td>
-        <td><%= temple.support %></td>
-        <td><%= temple.leastYear %></td>
+       <td><%= temple.ageLimit %></td>
+        <td><%= temple.sponger %></td>
+        <td><%= temple.rent %></td>
+        <td><%= temple.foodExpense %></td>
+        <td><%= temple.wages %></td>
+        <td><%= temple.minYears %></td>
         <td><%= temple.costume %></td>
-        <td><%= temple.workingTime %></td>
         <td><%= temple.holiday %></td>
-        <td><%= temple.distance %></td>
+        <td><%= temple.distanceFromStation %></td>
         <td><%= temple.experience %></td>
-        <td><%= temple.comment %></td>
         <td><%= temple.address %></td>
         <td><%= temple.phoneNumber %></td>
         <td><%= link_to 'Show', temple %></td>
-        <td><%= link_to 'Edit', edit_temple_path(temple) %></td>
-        <td><%= link_to 'Destroy', temple, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
