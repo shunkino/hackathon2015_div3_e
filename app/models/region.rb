@@ -1,3 +1,3 @@
 class Region < ActiveRecord::Base
-	belongs_to :temple
+ belongs_to :temple
 end
