@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :temples
 	get "temples/search/:genre/:query" => "temples#search"
 	get "temples/sort/:query" => "temples#sort"
+  # get "temples/list/:query/" -> "temples#list_temple"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
