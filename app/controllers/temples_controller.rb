@@ -60,6 +60,10 @@ class TemplesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  # GET /temples/serch/:genre/:qury
+	def search
+		@temples = Temple.where("#{params[:genre]} LIKE ?", "%#{params[:query]}%")
+	end
 
   private
     # Use callbacks to share common setup or constraints between actions.
