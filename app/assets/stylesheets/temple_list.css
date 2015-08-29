@@ -1,0 +1,68 @@
+#sect-group {
+    background-color: #03003E;
+}
+
+#treatment-group {
+    background-color: #930F28;
+}
+
+#time-group {
+    background-color: #45931D;
+}
+
+#group-title {
+    color:white;
+}
+
+#header{
+    background-color:white;
+}
+
+#temple-description {
+    background-color:white;
+}
+
+#sect-detail {
+    background-color:white;
+}
+
+#temple-text {
+    color:white;
+    text-shadow: 0 0px 0px;
+    text-decoration: none;
+}
+
+#temple-items01 {
+    background-color: #03003E;
+}
+
+#temple-items02 {
+    background-color: #03003E;
+}
+
+#temple-items03 {
+    background-color: #03003E;
+}
+
+#temple-status {
+    text-shadow: 0 0px 0px;
+    text-decoration: none;
+
+}
+
+#sect-contents {
+    border-style: solid;
+    border-width: 1px;
+}
+
+#sect-quote {
+    text-align:right;
+    color:green;
+}
+
+.label-white {
+    background-color: white;
+    color: #1A1A1A;
+    text-shadow: 0 0px 0px;
+    text-decoration: none;
+}
