@@ -22,13 +22,8 @@
 </p>
 
 <p>
-  <strong>Support:</strong>
-  <%= @temple.support %>
-</p>
-
-<p>
-  <strong>Leastyear:</strong>
-  <%= @temple.leastYear %>
+  <strong>MinYears:</strong>
+  <%= @temple.minYears %>
 </p>
 
 <p>
@@ -37,8 +32,8 @@
 </p>
 
 <p>
-  <strong>Workingtime:</strong>
-  <%= @temple.workingTime %>
+  <strong>WorkingHours:</strong>
+  <%= @temple.workingHours %>
 </p>
 
 <p>
@@ -47,18 +42,13 @@
 </p>
 
 <p>
-  <strong>Distance:</strong>
-  <%= @temple.distance %>
+  <strong>DistanceFromStation:</strong>
+  <%= @temple.distanceFromStation %>
 </p>
 
 <p>
   <strong>Experience:</strong>
   <%= @temple.experience %>
-</p>
-
-<p>
-  <strong>Comment:</strong>
-  <%= @temple.comment %>
 </p>
 
 <p>
@@ -71,7 +61,5 @@
   <%= @temple.phoneNumber %>
 </p>
 
-=======
->>>>>>> develop
 <%= link_to 'Edit', edit_temple_path(@temple) %> |
 <%= link_to 'Back', temples_path %>
