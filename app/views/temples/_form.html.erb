@@ -24,7 +24,7 @@
   
   <div class="field">
     画像URL<br>
-    <%= f.text_field :picUrl %>
+    <%= f.url_field :picUrl %>
   </div>
 
   <div class="field">
@@ -53,15 +53,27 @@
 
   <div class="field">
     衣装<br>
-    <%= f.text_field :costume%>
+    <%= f.text_field :costume %>
   </div>
+
   <div class="field">
     勤務時間<br>
+    <%= f.number_field :workingHours %>
   </div>
 
   <div class="field">
     月の休暇日数<br>
     <%= f.number_field :holiday %>
+  </div>
+
+  <div class="field">
+    駅からの距離<br>
+    <%= f.number_field :distanceFromStation %>
+  </div>
+
+  <div class="field">
+    得られる経験<br>
+    <%= f.text_field :experience %>
   </div>
 
   <div class="field">
