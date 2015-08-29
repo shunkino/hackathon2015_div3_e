@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>成仏センス</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @temples.each do |temple| %>
+      <tr>
+        <td><%= temple.name %></td>
+        <td><%= temple.ageLimit %></td>
+        <td><%= temple.sponger %></td>
+        <td><%= temple.rent %></td>
+        <td><%= temple.foodExpense %></td>
+        <td><%= temple.wages %></td>
+        <td><%= temple.minYears %></td>
+        <td><%= temple.costume %></td>
+        <td><%= temple.workingHours %></td>
+        <td><%= temple.holiday %></td>
+        <td><%= temple.distanceFromStation %></td>
+        <td><%= temple.experience %></td>
+        <td><%= temple.address %></td>
+        <td><%= temple.phoneNumber %></td>
+        <td><%= link_to 'Show', temple %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Temple', new_temple_path %>
