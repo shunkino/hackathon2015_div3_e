@@ -13,13 +13,8 @@
 </head>
 <body id="page_top">
 	<div id="home" data-role="page">
-<<<<<<< HEAD
-      <%= image_tag "logo.png" ,:id=>"imgwindow", :alt=>""%>
-		<div id="header" data-role="header">
-=======
 		<div id="header" data-role="header">
       <%= image_tag "logo.png" ,:id=>"imgwindow", :alt=>""%>
->>>>>>> 479437bc56f4432fa4e6a3fdb03b519bf14885f6
 		</div>
         
 	<div role="main" class="ui-content">
@@ -37,13 +32,13 @@
         <div id="sect-group" class="col-sm-3">
             <div id="group-title" >宗派から探す</div>
             <div class="ui-grid-b">
-                <div class="ui-block-a"><a href="#" class="ui-btn">真言宗</a></div>
-                <div class="ui-block-b"><a href="#" class="ui-btn">日蓮宗</a></div>
-                <div class="ui-block-c"><a href="#" class="ui-btn">天台宗</a></div>
+                <div class="ui-block-a"><a href="/temples/search/region_id/1" class="ui-btn">真言宗</a></div>
+                <div class="ui-block-b"><a href="/temples/search/region_id/2" class="ui-btn">日蓮宗</a></div>
+                <div class="ui-block-c"><a href="/temples/search/region_id/3" class="ui-btn">天台宗</a></div>
             </div>
             <div class="ui-grid-a">
-                <div class="ui-block-a"><a href="#" class="ui-btn">浄土宗</a></div>
-                <div class="ui-block-b"><a href="#" class="ui-btn">浄土真宗</a></div>
+                <div class="ui-block-a"><a href="/temples/search/region_id/4" class="ui-btn">浄土宗</a></div>
+                <div class="ui-block-b"><a href="/temples/search/region_id/5" class="ui-btn">浄土真宗</a></div>
             </div>
         </div><br>
         
@@ -51,14 +46,14 @@
         <div id="treatment-group" class="col-sm-3">
             <div id="group-title">待遇から探す</div>
             <div class="ui-grid-b">
-                <div class="ui-block-a"><a href="#" class="ui-btn">宿泊費</a></div>
-                <div class="ui-block-b"><a href="#" class="ui-btn">住み込み</a></div>
-                <div class="ui-block-c"><a href="#" class="ui-btn">所得</a></div>
+                <div class="ui-block-a"><a href="/temples/sort/rent" class="ui-btn">宿泊費</a></div>
+                <div class="ui-block-b"><a href="/temples/sort/sponger" class="ui-btn">住み込み</a></div>
+                <div class="ui-block-c"><a href="/temples/sort/wages" class="ui-btn">所得</a></div>
             </div>
             <div class="ui-grid-b">
-                <div class="ui-block-a"><a href="#" class="ui-btn">生活支援あり</a></div>
-                <div class="ui-block-b"><a href="#" class="ui-btn">衣装貸出あり</a></div>
-                <div class="ui-block-c"><a href="#" class="ui-btn">駅近</a></div>
+                <div class="ui-block-a"><a href="/temples/sort/wages" class="ui-btn">生活支援あり</a></div>
+                <div class="ui-block-b"><a href="/temples/sort/costume" class="ui-btn">衣装貸出あり</a></div>
+                <div class="ui-block-c"><a href="/temples/sort/distanceFromStation" class="ui-btn">駅近</a></div>
             </div>
         </div><br>
 
@@ -67,35 +62,18 @@
             
             <div id="group-title">時間から探す</div>
             <div class="ui-grid-b">
-                <div class="ui-block-a"><a href="#" class="ui-btn">宿泊費</a></div>
-                <div class="ui-block-b"><a href="#" class="ui-btn">住み込み</a></div>
-                <div class="ui-block-c"><a href="#" class="ui-btn">所得</a></div>
+                <div class="ui-block-a"><a href="/temples/sort/minYears" class="ui-btn">最低修行年数</a></div>
+				<div class="ui-block-b"><a href="/temples/sort/workingHours" class="ui-btn">勤務時間</a></div>
+                <div class="ui-block-c"><a href="/temples/sort/holiday" class="ui-btn">休日日</a></div>
             </div>
         </div>
             
 	</div>
-    
-<<<<<<< HEAD
-
 	<div data-role="footer" class="ui-bar">
 		<h4>出家したい人のための情報サイト「成仏センス」</h4>
 	</div>
 </div>
 
-=======
-	<div data-role="footer">
-		<h4>出家したい人のための情報サイト「成仏センス」</h4>
-<%= link_to '新しいお寺の登録', new_temple_path %>
-	</div>
-</div>
-
-
-	<div data-role="footer" class="ui-bar">
-		<h4>出家したい人のための情報サイト「成仏センス」</h4>
-	</div>
-</div>
-
->>>>>>> 479437bc56f4432fa4e6a3fdb03b519bf14885f6
 </body>
 	
 </html>

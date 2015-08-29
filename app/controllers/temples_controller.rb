@@ -65,6 +65,11 @@ class TemplesController < ApplicationController
 		@temples = Temple.where("#{params[:genre]} LIKE ?", "%#{params[:query]}%")
 	end
 
+  # GET /temples/sort/:qury
+	def sort
+		@temples = Temple.order("#{params[:query]}")
+	end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_temple
