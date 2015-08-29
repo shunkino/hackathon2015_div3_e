@@ -28,8 +28,8 @@ class TemplesController < ApplicationController
 
     respond_to do |format|
       if @temple.save
-        format.html { redirect_to @temple, notice: 'Temple was successfully created.' }
-        format.json { render :show, status: :created, location: @temple }
+        format.html { render :index, notice: 'Temple was successfully created.' }
+        format.json { render :index, status: :created, location: @temple }
       else
         format.html { render :new }
         format.json { render json: @temple.errors, status: :unprocessable_entity }
