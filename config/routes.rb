@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 	root :to => 'temples#index'
   resources :temples
+	get "temples/search/sect/:query" => "temples#regionSearch"
 	get "temples/search/:genre/:query" => "temples#search"
 	get "temples/sort/:query" => "temples#sort"
   # get "temples/list/:query/" -> "temples#list_temple"

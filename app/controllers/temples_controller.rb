@@ -60,12 +60,16 @@ class TemplesController < ApplicationController
       format.json { head :no_content }
     end
   end
-  # GET /temples/serch/:genre/:qury
+  # GET /temples/search/sect/:qury
+	def regionSearch
+		@temples = Temple.where("region_id LIKE ?", "#{params[:query]}")
+		puts params[:query]
+	end
+  # GET /temples/search/:genre/:qury
 	def search
 		@temples = Temple.where("#{params[:genre]} LIKE ?", "%#{params[:query]}%")
 	end
-
-  # GET /temples/sort/:qury
+	# GET /temples/sort/:qury
 	def sort
 		@temples = Temple.order("#{params[:query]}")
 	end
