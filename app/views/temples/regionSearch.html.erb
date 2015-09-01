@@ -1,8 +1,7 @@
 <!doctype html>
 <body id="page_temple">
 	<div id="home" data-role="page">
-		<%= image_tag asset_path "header-image.png" ,:alt=>"header-image" ,:class=>"img-responsive",:width=>"100%", :height=>"auto"%>
-        <img src="header-image.png" class="img-responsive">
+		<%= image_tag(asset_path("header-image.png") ,:alt=>"header-image" ,:class=>"img-responsive",:width=>"100%", :height=>"auto") %>
 		<div  data-role="header" data-add-back-btn="true" style="background:#03003E" >
             
             <a href="#" data-role="button" data-icon="carat-l" style="border: 1px solid #03003E ; background: #03003E ;text-shadow: 0 0px 0px #03003E ;text-decoration: none">
@@ -13,7 +12,7 @@
         
     <% @temples.each do |t| %>
       <% @sect = t.region.sect %>
-      <% @description= t.region.discription %>
+      <% @description= t.region.description %>
 
         <div id="sect_detail">
             <h4>宗派説明</h4>
@@ -33,7 +32,7 @@
             <ul class="media-list">
                 <li>
                     <a class="media-left" href="#">
-                        <img class="media-object" src="280px-Koshoji05s1800.jpg">
+						<%= image_tag(asset_path("280px-Koshoji05s1800.jpg"), :alt=>"temple-image", :class=>"media-object") %>
                     </a>
                     <div id="temple-description" class="media-body">
                         
