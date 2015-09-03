@@ -62,8 +62,7 @@ class TemplesController < ApplicationController
   end
   # GET /temples/search/sect/:qury
 	def regionSearch
-		@temples = Temple.where("region_id LIKE ?", "#{params[:query]}")
-		puts params[:query]
+		@temples = Temple.where("region_id=?", "#{params[:query]}")
 	end
   # GET /temples/search/:genre/:qury
 	def search

@@ -3,15 +3,15 @@
 <html lang="ja">
 	<body id="page_top">
 		<div id="home" data-role="page">
+			<%= link_to image_tag(asset_path("header-image.png") ,:alt=>"header-image" ,:class=>"img-responsive",:width=>"100%", :height=>"auto"), root_path %>
 			<div id="header" data-role="header">
-				<%= image_tag asset_path "logo.png", :id=>"imgwindow", :alt=>"logo"%>
+				<%#= image_tag asset_path "logo.png", :id=>"imgwindow", :alt=>"logo" -%>
 			</div>
 
 			<div role="main" class="ui-content">
 				<div id="top-image">
 					<%= image_tag(asset_path("top.png"), :alt => "top", :class => "img-responsive") %> 
 				</div>
-
 				<div id="site-description">
 					<h3>成仏センスでは、宗派、待遇、時間に合わせたお寺が検索できます。</h3>
 				</div>
